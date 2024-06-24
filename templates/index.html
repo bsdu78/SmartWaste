@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartWaste Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>SmartWaste Prediction</h1>
+        <form action="/predict" method="post">
+            <label for="feature1">Feature 1:</label>
+            <input type="text" id="feature1" name="feature1" required><br>
+            <label for="feature2">Feature 2:</label>
+            <input type="text" id="feature2" name="feature2" required><br>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
